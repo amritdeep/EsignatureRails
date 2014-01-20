@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+source 'http://rubygems.org'
 
 gem 'rails', '3.2.13'
 
@@ -32,8 +32,13 @@ group :development, :test do
   	# For Templating Engin
   	gem 'haml-rails'
 
-  	# For TDD
+  	# For TDD and BDD
   	gem 'rspec-rails'
+    gem 'shoulda-matchers'
+
+    gem 'capybara'
+    gem 'faker'
+    gem 'database_cleaner', '~> 1.2.0'
 
 end
 

@@ -3,4 +3,6 @@ class Employer < ActiveRecord::Base
 	scope :dept, order: 'department'
 	
   attr_accessible :department, :name
+
+  validates :name, :department, presence: true
 end
