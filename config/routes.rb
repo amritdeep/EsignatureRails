@@ -1,4 +1,13 @@
-EsignatureRails::Application.routes.draw do
+EsignatureRails::Application.routes.draw do  
+  get "wecome/index"
+
+  # root to: 'employers#index'
+
+  root to: 'wecome#index'
+
+  resources :employers
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

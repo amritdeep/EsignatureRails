@@ -37,6 +37,10 @@ group :development, :test do
 
 end
 
+# For Authencation and Authorization
+gem 'devise'
+
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
