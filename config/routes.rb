@@ -1,4 +1,6 @@
 EsignatureRails::Application.routes.draw do  
+  devise_for :users
+
   get "wecome/index"
 
   # root to: 'employers#index'

@@ -2,5 +2,16 @@
 
 %h1 Welcome User
 
+%table{border: "1"}
+	%tr
+		%th Developer
+		%th Department
+
+	- @department.each do |e|
+
+		%tr
+			%td= e.name
+			%td= e.department
+
 
 = link_to "Employer Record System", employers_path

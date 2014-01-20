@@ -1,5 +1,7 @@
 class WecomeController < ApplicationController
+
   def index
-  	"Welcome"
+  	@employer = Employer.order_employer
+  	@department = Employer.dept
   end
 end
