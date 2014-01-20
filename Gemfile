@@ -22,6 +22,21 @@ end
 
 gem 'jquery-rails'
 
+group :development, :test do
+	# For Debuging
+	gem 'better_errors'
+  	gem 'binding_of_caller'
+  	gem 'meta_request'
+  	gem 'pry'
+
+  	# For Templating Engin
+  	gem 'haml-rails'
+
+  	# For TDD
+  	gem 'rspec-rails'
+
+end
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
